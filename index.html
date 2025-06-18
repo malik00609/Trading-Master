@@ -1,12 +1,172 @@
-
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>Trading Master</title>
+  <meta charset="UTF-8">
+  <title>کمیٹی ڈیش بورڈ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
+    body {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      background: #f4f9ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #0056b3;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      border-bottom: 4px solid #00408a;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .summary-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+
+    .box {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      flex: 1 1 200px;
+      border-top: 4px solid #198754;
+    }
+
+    .box h3 {
+      margin: 0;
+      font-size: 24px;
+      color: #198754;
+    }
+
+    .box p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #444;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 14px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #198754;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f2f2f2;
+    }
+
+    .status-paid {
+      color: green;
+      font-weight: bold;
+    }
+
+    .status-pending {
+      color: red;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+
+  </style>
 </head>
 <body>
-    <h1>خوش آمدید - Trading Master</h1>
-    <p>یہ ایک سادہ ریفرل انویسٹمنٹ فارم ہے۔</p>
+
+  <header>
+    💼 کمیٹی ڈیش بورڈ
+  </header>
+
+  <div class="container">
+
+    <div class="summary-boxes">
+      <div class="box">
+        <h3>100</h3>
+        <p>کل ممبران</p>
+      </div>
+      <div class="box">
+        <h3>3</h3>
+        <p>کمیٹیاں فی مہینہ</p>
+      </div>
+      <div class="box">
+        <h3>1,00,000</h3>
+        <p>فی ممبر کمیٹی رقم (روپے)</p>
+      </div>
+      <div class="box">
+        <h3>10 تاریخ</h3>
+        <p>اگلی کمیٹی کی تاریخ</p>
+      </div>
+    </div>
+
+    <h2 style="text-align:center; color:#0a58ca;">👥 ممبران کی تفصیل</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>نمبر</th>
+          <th>نام</th>
+          <th>ادائیگی کی حالت</th>
+          <th>کمیٹی نکلی؟</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>احمد خان</td>
+          <td class="status-paid">ادا شدہ</td>
+          <td>❌</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>علی رضا</td>
+          <td class="status-pending">باقی</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>فاطمہ بی بی</td>
+          <td class="status-paid">ادا شدہ</td>
+          <td>❌</td>
+        </tr>
+        <!-- مزید ممبرز یہاں شامل کریں -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Malik Waliullah Committee System - Powered by Trust
+  </div>
+
 </body>
 </html>
